@@ -1,0 +1,13 @@
+body {
+  @include ouiHeaderAffordForFixed;
+}
+
+.dsHeader {
+  .ouiHeaderSectionItem::after {
+    top: 0;
+  }
+
+  .ouiHeaderLogo__text {
+    font-weight: 700;
+  }
+}

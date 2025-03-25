@@ -1,0 +1,73 @@
+.dsCollapsibleNav {
+  .ouiCollapsibleNavGroup {
+    &:not(:first-child) {
+      border-color: transparent;
+    }
+  }
+
+  .ouiTitle {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: $dsColorStone500;
+    text-shadow: 0 1px 0 transparentize($dsColorStone950, 0.25);
+  }
+
+  .ouiListGroupItem {
+    border-radius: $ouiBorderRadiusSmall;
+    position: relative;
+
+    &::before {
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      pointer-events: none;
+      border-radius: $ouiBorderRadiusSmall;
+      opacity: 0;
+      background: radial-gradient(
+        circle at center left,
+        transparentize($ouiColorMediumShade, 0.65) 0%,
+        transparentize($ouiColorMediumShade, 0.9) 100%
+      );
+      transition: opacity $ouiAnimSpeedNormal $ouiAnimSlightResistance;
+    }
+
+    .ouiListGroupItem__text,
+    .ouiListGroupItem__button {
+      line-height: $ouiSizeL;
+      padding: $ouiSizeS $ouiSizeM;
+
+      .ouiListGroupItem__icon {
+        path {
+          fill: $dsColorStone400;
+        }
+      }
+    }
+
+    &.ouiListGroupItem-isActive,
+    &.ouiListGroupItem-isClickable:hover {
+      background-color: transparent;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &.ouiListGroupItem-isActive:not(.ouiListGroupItem--ghost)
+      .ouiListGroupItem__text,
+    &.ouiListGroupItem-isActive:not(.ouiListGroupItem--ghost)
+      .ouiListGroupItem__button {
+      color: $dsColorStone200;
+    }
+
+    &.ouiListGroupItem-isClickable:hover .ouiListGroupItem__button,
+    .ouiListGroupItem__button:hover,
+    .ouiListGroupItem__button:focus {
+      text-decoration: none;
+    }
+  }
+}

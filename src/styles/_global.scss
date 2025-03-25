@@ -1,0 +1,14 @@
+html {
+  letter-spacing: 0;
+  scrollbar-gutter: stable;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: $dsColorRed950;
+  color: $dsColorStone200;
+  text-shadow: none;
+}

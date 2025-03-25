@@ -1,0 +1,22 @@
+@import '@opensearch-project/oui/src/global_styling/functions/index';
+
+@import './styles/fonts.scss';
+
+@import './styles/global_styling/colors.scss';
+@import './styles/global_styling/typography';
+@import './styles/global_styling/borders';
+@import './styles/global_styling/shadows';
+
+@import './styles/components/header';
+@import './styles/components/collapsible_nav';
+
+@import '@opensearch-project/oui/src/global_styling/index';
+@import '@opensearch-project/oui/src/components/index';
+
+@import '../packages/index';
+
+@import './styles/global';
+
+@import './components/CollapsibleNav.scss';
+@import './components/Header.scss';
+@import './components/PageBody.scss';
