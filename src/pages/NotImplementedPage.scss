@@ -1,0 +1,11 @@
+.dsNotImplementedPage {
+  height: 100%;
+  height: calc(100vh - $ouiHeaderHeightCompensation - calc($ouiSizeL * 2));
+  display: flex;
+  align-items: center;
+
+  .ouiPanel {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

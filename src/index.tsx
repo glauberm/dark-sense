@@ -6,7 +6,7 @@ import './index.scss';
 import './lib/icons';
 import DefaultLayout from './layouts/DefaultLayout';
 import LogIndexPage from './pages/LogIndexPage';
-import LogDetailPage from './pages/LogDetailPage';
+import NotImplementedPage from './pages/NotImplementedPage';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,7 +14,7 @@ ReactDOM.render(
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<LogIndexPage />} />
-          <Route path="/detail" element={<LogDetailPage />} />
+          <Route path="/*" element={<NotImplementedPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
