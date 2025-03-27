@@ -1,0 +1,16 @@
+$ouiBreadcrumbActiveBackground: tintOrShade($ouiColorPrimary, 72%, 41%);
+
+.dsBody {
+  .ouiBreadcrumbs:not(.ouiBreadcrumbs__inPopover) .ouiBreadcrumbWrapper {
+    &.ouiBreadcrumbWrapper--last {
+      &::before {
+        background: linear-gradient(
+          to top right,
+          $ouiBreadcrumbActiveBackground 0%,
+          $ouiBreadcrumbActiveBackground 50%,
+          $dsColorRed700 100%
+        );
+      }
+    }
+  }
+}
