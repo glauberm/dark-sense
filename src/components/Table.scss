@@ -100,6 +100,29 @@
   @include ouiBreakpoint('xs', 's') {
     .ouiTable.ouiTable--responsive .ouiTableRow {
       box-shadow: none;
+
+      .ouiCheckbox {
+        .ouiCheckbox__input {
+          + .ouiCheckbox__square {
+            background-color: $dsColorStone800;
+            border-color: $dsColorStone600;
+          }
+
+          &:checked + .ouiCheckbox__square {
+            background-color: $ouiColorPrimary;
+            border-color: $ouiColorPrimary;
+          }
+
+          &[disabled] + .ouiCheckbox__square {
+            background-color: $dsColorStone700;
+          }
+        }
+      }
+    }
+
+    .ouiTableCellContent {
+      padding-top: $ouiSizeS;
+      padding-bottom: $ouiSizeS;
     }
   }
 }
