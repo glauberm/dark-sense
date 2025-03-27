@@ -13,4 +13,11 @@ body {
     letter-spacing: -0.05em;
     font-weight: 700;
   }
+
+  .ouiButtonEmpty {
+    &:hover:not([class*='isDisabled']),
+    &:focus {
+      text-decoration: none;
+    }
+  }
 }
