@@ -36,10 +36,10 @@ function LogLevelCell({ level }: { level: LogLevel }) {
       color = '#3b82f6';
       break;
     case 'NOTICE':
-      color = '#f97316';
+      color = 'warning';
       break;
     case 'WARNING':
-      color = 'warning';
+      color = '#f97316';
       break;
     case 'ERROR':
       color = 'danger';
