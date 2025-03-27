@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './index.scss';
 import './lib/icons';
@@ -8,7 +8,7 @@ import DefaultLayout from './layouts/DefaultLayout';
 import LogIndexPage from './pages/LogIndexPage';
 import LogDetailPage from './pages/LogDetailPage';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
@@ -18,5 +18,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         </Route>
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );

@@ -1,6 +1,6 @@
 import { MouseEvent, RefAttributes } from 'react';
 import { OuiLink, OuiLinkAnchorProps } from '@opensearch-project/oui';
-import { useNavigate, useHref, LinkProps } from 'react-router';
+import { useNavigate, useHref, LinkProps } from 'react-router-dom';
 
 const isModifiedEvent = (event: MouseEvent) => {
   return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
