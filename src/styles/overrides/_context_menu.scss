@@ -1,0 +1,10 @@
+.ouiContextMenuItem {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $dsColorStone900;
+  }
+}

@@ -1,0 +1,82 @@
+.dsBasicTable {
+  .ouiTable {
+    background-color: $ouiColorLightShade;
+    font-feature-settings: normal;
+  }
+
+  .ouiTableCellContent {
+    padding: $ouiSize;
+  }
+
+  .ouiTableHeaderCell,
+  .ouiTableHeaderCellCheckbox {
+    .ouiTableCellContent {
+      padding-top: $ouiSizeS;
+    }
+  }
+
+  .ouiTableFooterCell,
+  .ouiTableHeaderCell {
+    border-bottom: $ouiBorderWidthThin solid $dsColorStone700;
+  }
+
+  .ouiTableHeaderCellCheckbox {
+    border-bottom: $ouiBorderWidthThin solid $dsColorStone700;
+
+    .ouiTableCellContent {
+      padding-left: $ouiSizeS;
+    }
+  }
+
+  .ouiTableRowCell {
+    border-top: $ouiBorderWidthThin solid $dsColorStone700;
+    border-bottom: $ouiBorderWidthThin solid $dsColorStone700;
+  }
+
+  .ouiTableRowCellCheckbox {
+    border-top: $ouiBorderWidthThin solid $dsColorStone700;
+    border-bottom: $ouiBorderWidthThin solid $dsColorStone700;
+
+    .ouiTableCellContent {
+      padding-left: $ouiSizeS;
+    }
+  }
+
+  .ouiTableRow:last-child {
+    .ouiTableRowCell,
+    .ouiTableRowCellCheckbox {
+      border-bottom-color: transparent;
+    }
+  }
+
+  .ouiCheckbox {
+    .ouiCheckbox__input {
+      + .ouiCheckbox__square {
+        box-shadow: none;
+        border-radius: $dsBorderRadiusExtraSmall;
+        background-color: $ouiColorLightestShade;
+        border-color: $dsColorStone700;
+      }
+
+      &:checked + .ouiCheckbox__square {
+        background-color: $ouiColorPrimary;
+        border-color: $ouiColorPrimary;
+      }
+
+      &[disabled] + .ouiCheckbox__square {
+        background-color: $ouiColorLightShade;
+      }
+    }
+  }
+
+  .ouiButtonEmpty {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    .ouiButtonEmpty__text {
+      padding: $ouiSizeS 0;
+    }
+  }
+}

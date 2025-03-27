@@ -1,0 +1,43 @@
+.ouiPopover__panel {
+  border-color: $ouiColorMediumShade;
+
+  .ouiPopover__panelArrow {
+    &::before {
+      content: none;
+    }
+    &::after {
+      content: none;
+    }
+  }
+
+  .ouiContextMenuItem {
+    &:first-child {
+      border-radius: $ouiBorderRadiusSmall $ouiBorderRadiusSmall 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 $ouiBorderRadiusSmall $ouiBorderRadiusSmall;
+    }
+  }
+
+  &.ouiPopover__panel-isAttached {
+    &.ouiPopover__panel--bottom {
+      border-top-color: $ouiColorMediumShade;
+
+      .ouiContextMenuItem {
+        &:first-child {
+          border-radius: 0;
+        }
+      }
+    }
+
+    &.ouiPopover__panel--top {
+      border-bottom-color: $ouiColorMediumShade;
+
+      .ouiContextMenuItem {
+        &:last-child {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

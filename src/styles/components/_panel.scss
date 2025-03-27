@@ -1,0 +1,17 @@
+$ouiPanelBorderRadiusModifiers: (
+  'borderRadiusNone': 0,
+  'borderRadiusMedium': $ouiBorderRadiusSmall,
+  'borderRadiusLarge': $ouiBorderRadius,
+  'borderRadiusXLarge': $ouiBorderRadius * 2,
+);
+
+$ouiPanelBackgroundColorModifiers: (
+  'transparent': transparent,
+  'plain': $dsColorStone700,
+  'subdued': $ouiColorLightShade,
+  'accent': tintOrShade($ouiColorAccent, 90%, 70%),
+  'primary': tintOrShade($ouiColorPrimary, 90%, 70%),
+  'success': tintOrShade($ouiColorSuccess, 90%, 70%),
+  'warning': tintOrShade($ouiColorWarning, 90%, 70%),
+  'danger': tintOrShade($ouiColorDanger, 90%, 70%),
+);

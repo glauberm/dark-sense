@@ -3,3 +3,7 @@ $ouiBorderWidthThick: 1px;
 
 $ouiBorderColor: $ouiColorLightShade;
 $ouiBorderRadius: 16px;
+$ouiBorderRadiusSmall: calc($ouiBorderRadius / 2);
+
+$dsBorderRadiusExtraSmall: calc($ouiBorderRadiusSmall / 2);
+$dsBorderRadiusSuperExtraSmall: calc($dsBorderRadiusExtraSmall / 2);
