@@ -3,11 +3,14 @@ body {
 }
 
 .dsHeader {
+  box-shadow: none;
+
   .ouiHeaderSectionItem::after {
     top: 0;
   }
 
   .ouiHeaderLogo__text {
+    letter-spacing: -0.05em;
     font-weight: 700;
   }
 }
