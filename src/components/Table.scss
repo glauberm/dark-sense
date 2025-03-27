@@ -28,6 +28,15 @@
     }
   }
 
+  .ouiTableHeaderButton {
+    &:hover,
+    &:focus {
+      .ouiTableCellContent__text {
+        text-decoration: none;
+      }
+    }
+  }
+
   .ouiTableRowCell {
     border-top: $ouiBorderWidthThin solid $dsColorStone700;
     border-bottom: $ouiBorderWidthThin solid $dsColorStone700;
@@ -70,6 +79,9 @@
   }
 
   .ouiButtonEmpty {
+    color: $dsColorStone300;
+    letter-spacing: 0;
+
     &:hover,
     &:focus {
       text-decoration: none;
@@ -77,6 +89,17 @@
 
     .ouiButtonEmpty__text {
       padding: $ouiSizeS 0;
+    }
+  }
+
+  .ouiPaginationButton.ouiPaginationButton-isActive {
+    text-decoration: none;
+    color: $dsColorRed600;
+  }
+
+  @include ouiBreakpoint('xs', 's') {
+    .ouiTable.ouiTable--responsive .ouiTableRow {
+      box-shadow: none;
     }
   }
 }
