@@ -61,7 +61,14 @@
       .ouiListGroupItem__text,
     &.ouiListGroupItem-isActive:not(.ouiListGroupItem--ghost)
       .ouiListGroupItem__button {
-      color: $dsColorStone200;
+      color: $ouiColorPrimaryText;
+      font-weight: 600;
+
+      .ouiListGroupItem__icon {
+        path {
+          fill: $dsColorRed500;
+        }
+      }
     }
 
     &.ouiListGroupItem-isClickable:hover .ouiListGroupItem__button,
