@@ -33,15 +33,19 @@ function LogLevelCell({ level }: { level: LogLevel }) {
       color = 'subdued';
       break;
     case 'INFO':
-      color = 'text';
+      color = '#3b82f6';
       break;
     case 'NOTICE':
+      color = '#f97316';
+      break;
     case 'WARNING':
       color = 'warning';
       break;
     case 'ERROR':
-    case 'CRITICAL':
       color = 'danger';
+      break;
+    case 'CRITICAL':
+      color = '#ef4444';
       break;
   }
 
@@ -219,7 +223,7 @@ export default function LogTable() {
         </OuiFlexItem>
       </OuiFlexGroup>
 
-      <OuiSpacer size="l" />
+      <OuiSpacer className="oui-hideFor--xs oui-hideFor--s" size="l" />
 
       <Table
         items={rows}
