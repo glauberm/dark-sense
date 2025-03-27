@@ -1,1 +1,12 @@
 $ouiButtonBorderRadius: $dsBorderRadiusExtraSmall;
+
+.dsBody {
+  .ouiButton {
+    letter-spacing: 0;
+
+    &:hover:not([class*='isDisabled']),
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
