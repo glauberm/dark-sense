@@ -20,6 +20,12 @@ Install the dependencies:
 yarn
 ```
 
+Create fake log data:
+
+```
+yarn run fake:logs
+```
+
 Run the development server:
 
 ```
