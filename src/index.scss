@@ -13,15 +13,13 @@
 @import './styles/components/collapsible_nav';
 @import './styles/components/panel';
 @import './styles/components/table';
+@import './styles/components/breadcrumbs';
+@import './styles/components/form';
 @import './styles/components/buttons';
+@import './styles/components/popover';
+@import './styles/components/context_menu';
 
 @import '@opensearch-project/oui/src/components/index';
-
-@import '../packages/index';
-
-@import './styles/overrides/form';
-@import './styles/overrides/popover';
-@import './styles/overrides/context_menu';
 
 @import './styles/global';
 
@@ -29,3 +27,5 @@
 @import './components/Header.scss';
 @import './components/PageBody.scss';
 @import './components/Table.scss';
+
+@import './pages/NotImplementedPage.scss';
