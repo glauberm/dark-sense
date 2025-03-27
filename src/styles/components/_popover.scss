@@ -1,0 +1,36 @@
+.dsBody {
+  .ouiPopover__panel {
+    border-color: $ouiColorMediumShade;
+
+    .ouiPopover__panelArrow {
+      &::before {
+        content: none;
+      }
+      &::after {
+        content: none;
+      }
+    }
+
+    &.ouiPopover__panel-isAttached {
+      &.ouiPopover__panel--bottom {
+        border-top-color: $ouiColorMediumShade;
+
+        .ouiContextMenuItem {
+          &:first-child {
+            border-radius: 0;
+          }
+        }
+      }
+
+      &.ouiPopover__panel--top {
+        border-bottom-color: $ouiColorMediumShade;
+
+        .ouiContextMenuItem {
+          &:last-child {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}

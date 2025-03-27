@@ -1,0 +1,38 @@
+.dsBody {
+  .ouiContextMenu {
+    border-radius: $ouiBorderRadiusSmall;
+  }
+
+  .ouiContextMenuPanel {
+    .ouiContextMenuPanelTitle {
+      border-bottom-color: transparent;
+    }
+
+    &:has(.ouiContextMenuPanelTitle) {
+      .ouiContextMenuItem:first-child {
+        border-radius: 0;
+      }
+    }
+  }
+
+  .ouiContextMenuItem {
+    &:first-child {
+      border-radius: $ouiBorderRadiusSmall $ouiBorderRadiusSmall 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 $ouiBorderRadiusSmall $ouiBorderRadiusSmall;
+    }
+    &:only-child {
+      border-radius: $ouiBorderRadiusSmall;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-color: $dsColorStone900;
+    }
+  }
+}

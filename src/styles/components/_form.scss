@@ -1,0 +1,32 @@
+.dsBody {
+  .ouiFormControlLayout {
+    &.ouiFormControlLayout--group {
+      background-color: $dsColorStone900;
+      border-radius: $dsBorderRadiusSuperExtraSmall + 1;
+      box-shadow: none;
+
+      .ouiFormLabel,
+      .ouiText {
+        background-color: $dsColorStone600;
+      }
+
+      .ouiFormControlLayout__prepend {
+        border-top-left-radius: $dsBorderRadiusSuperExtraSmall;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: $dsBorderRadiusSuperExtraSmall;
+
+        + .ouiFormControlLayout__childrenWrapper {
+          border-top-left-radius: 0;
+          border-top-right-radius: $dsBorderRadiusSuperExtraSmall;
+          border-bottom-right-radius: $dsBorderRadiusSuperExtraSmall;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+
+    .ouiSuperSelectControl {
+      background-color: $dsColorStone700;
+    }
+  }
+}
