@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "yarn run fake:logs && tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
     "fake:logs": "tsx ./src/scripts/fake-logs.ts"
   },
   "dependencies": {
