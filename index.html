@@ -7,9 +7,77 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>DarkSense | Arancia</title>
+    <style>
+      @-webkit-keyframes dsLoader {
+        0% {
+          opacity: 0.2;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.2;
+        }
+      }
+
+      @keyframes dsLoader {
+        0% {
+          opacity: 0.2;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.2;
+        }
+      }
+
+      html,
+      body {
+        background-color: #1c1917;
+      }
+
+      #dsLoader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #1c1917;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.25s ease-in;
+      }
+
+      #dsLoader img {
+        width: 10vmax;
+        height: 10vmax;
+        -webkit-animation-name: dsLoader;
+        animation-name: dsLoader;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+        animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+      }
+
+      #dsLoader.dsLoaderHide {
+        transform: translateY(-100%);
+      }
+
+      #dsLoader.dsLoaderHidden {
+        display: none;
+      }
+    </style>
   </head>
   <body class="dsBody">
     <div id="root"></div>
+    <div id="dsLoader">
+      <img src="/favicon.svg" />
+    </div>
     <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>

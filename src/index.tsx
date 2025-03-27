@@ -21,3 +21,14 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+const loader = document.getElementById('dsLoader');
+
+if (loader) {
+  loader.classList.add('dsLoaderHide');
+
+  setTimeout(() => {
+    loader.hidden = true;
+    loader.classList.add('dsLoaderHidden');
+  }, 250);
+}
